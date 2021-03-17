@@ -1,4 +1,4 @@
-Algorithm ,Run,SideEffect,Loss,acc,roc_auc,pr_auc,time in s
+Algorithm ,Run,Side-Effect,Loss,acc,roc_auc,pr_auc,time in s
 SEAL-with embeddings,1,Mumps,0.07297,0.97778,0.99290,0.99550,21.842066764831543
 SEAL-with embeddings,2,Mumps,0.07682,0.97778,0.99275,0.99512,22.12266993522644
 SEAL-with embeddings,3,Mumps,0.08241,0.97778,0.99198,0.99423,22.22207474708557
@@ -32,8 +32,8 @@ SEAL-with embeddings,10,Coccydynia,0.11645,0.95752,0.98851,0.99166,17.9215879440
 SEAL-with embeddings,1,Emesis,0.40745,0.81325,0.88923,0.86226,17549.828799009323
 SEAL-with embeddings,2,Emesis,0.41132,0.81318,0.88707,0.85943,11399.971181631088
 SEAL-with embeddings,3,Emesis,0.40772,0.81585,0.88895,0.86180,8777.68857216835
-SEAL-with embeddings,4,Emesis,,,,,
-SEAL-with embeddings,5,Emesis,,,,,
+SEAL-with embeddings,4,Emesis,0.40778,0.81600,0.88884,0.86170,6012.049762248993
+SEAL-with embeddings,5,Emesis,0.40770,0.81448,0.88898,0.86197,7028.072004079819
 SEAL-with embeddings,6,Emesis,,,,,
 SEAL-with embeddings,7,Emesis,,,,,
 SEAL-with embeddings,8,Emesis,,,,,
@@ -179,3 +179,9 @@ P-GNN,7,Bleeding,,,,,
 P-GNN,8,Bleeding,,,,,
 P-GNN,9,Bleeding,,,,,
 P-GNN,10,Bleeding,,,,,
+Decagon,1,Mumps,,,,0.964,
+Decagon,1,Carbuncle,,,,0.949,
+Decagon,1,Coccydynia,,,,0.943,
+Decagon,1,Emesis,,,,0.693,
+Decagon,1,Increased body temp.,,,,0.680,
+Decagon,1,Bleeding,,,,0.679,
