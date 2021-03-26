@@ -34,11 +34,11 @@ SEAL-with embeddings,2,Emesis,0.41132,0.81318,0.88707,0.85943,11399.971181631088
 SEAL-with embeddings,3,Emesis,0.40772,0.81585,0.88895,0.86180,8777.68857216835
 SEAL-with embeddings,4,Emesis,0.40778,0.81600,0.88884,0.86170,6012.049762248993
 SEAL-with embeddings,5,Emesis,0.40770,0.81448,0.88898,0.86197,7028.072004079819
-SEAL-with embeddings,6,Emesis,,,,,
-SEAL-with embeddings,7,Emesis,,,,,
-SEAL-with embeddings,8,Emesis,,,,,
-SEAL-with embeddings,9,Emesis,,,,,
-SEAL-with embeddings,10,Emesis,,,,,
+SEAL-with embeddings,6,Emesis,0.40777,0.81651,0.88905,0.86190,6768.0653529167175
+SEAL-with embeddings,7,Emesis,0.40899,0.81614,0.88830,0.86090,7128.034739017487
+SEAL-with embeddings,8,Emesis,0.40812,0.81477,0.88907,0.86199,6352.076798200607
+SEAL-with embeddings,9,Emesis,0.40804,0.81571,0.88872,0.86127,8890.974922895432
+SEAL-with embeddings,10,Emesis,0.40925,0.81434,0.88842,0.86093,18117.69557905197
 SEAL-with embeddings,1,Increased body temp.,0.43468,0.80083,0.87362,0.84535,9120.316503047943
 SEAL-with embeddings,2,Increased body temp.,0.43310,0.80014,0.87472,0.84712,7674.956088066101
 SEAL-with embeddings,3,Increased body temp.,0.43377 ,0.79914,0.87430,0.84521,5064.842092037201
@@ -59,129 +59,309 @@ SEAL-with embeddings,7,Bleeding,0.43397,0.80179,0.87509,0.84986,7197.62861490249
 SEAL-with embeddings,8,Bleeding,0.43136,0.80285,0.87596,0.85090,3382.1762211322784
 SEAL-with embeddings,9,Bleeding,0.43385,0.80038,0.87448,0.84836,3495.9540820121765
 SEAL-with embeddings,10,Bleeding,0.43492,0.80120,0.87419,0.84799,2527.0290796756744 
-SEAL-no embeddings,1,Mumps,,,,,
-SEAL-no embeddings,2,Mumps,,,,,
-SEAL-no embeddings,3,Mumps,,,,,
-SEAL-no embeddings,4,Mumps,,,,,
-SEAL-no embeddings,5,Mumps,,,,,
-SEAL-no embeddings,6,Mumps,,,,,
-SEAL-no embeddings,7,Mumps,,,,,
-SEAL-no embeddings,8,Mumps,,,,,
-SEAL-no embeddings,9,Mumps,,,,,
-SEAL-no embeddings,10,Mumps,,,,,
-SEAL-no embeddings,1,Carbuncle,,,,,
-SEAL-no embeddings,2,Carbuncle,,,,,
-SEAL-no embeddings,3,Carbuncle,,,,,
-SEAL-no embeddings,4,Carbuncle,,,,,
-SEAL-no embeddings,5,Carbuncle,,,,,
-SEAL-no embeddings,6,Carbuncle,,,,,
-SEAL-no embeddings,7,Carbuncle,,,,,
-SEAL-no embeddings,8,Carbuncle,,,,,
-SEAL-no embeddings,9,Carbuncle,,,,,
-SEAL-no embeddings,10,Carbuncle,,,,,
-SEAL-no embeddings,1,Coccydynia,,,,,
-SEAL-no embeddings,2,Coccydynia,,,,,
-SEAL-no embeddings,3,Coccydynia,,,,,
-SEAL-no embeddings,4,Coccydynia,,,,,
-SEAL-no embeddings,5,Coccydynia,,,,,
-SEAL-no embeddings,6,Coccydynia,,,,,
-SEAL-no embeddings,7,Coccydynia,,,,,
-SEAL-no embeddings,8,Coccydynia,,,,,
-SEAL-no embeddings,9,Coccydynia,,,,,
-SEAL-no embeddings,10,Coccydynia,,,,,
-SEAL-no embeddings,1,Emesis,,,,,
-SEAL-no embeddings,2,Emesis,,,,,
-SEAL-no embeddings,3,Emesis,,,,,
-SEAL-no embeddings,4,Emesis,,,,,
-SEAL-no embeddings,5,Emesis,,,,,
-SEAL-no embeddings,6,Emesis,,,,,
-SEAL-no embeddings,7,Emesis,,,,,
-SEAL-no embeddings,8,Emesis,,,,,
-SEAL-no embeddings,9,Emesis,,,,,
-SEAL-no embeddings,10,Emesis,,,,,
-SEAL-no embeddings,1,Increased body temp.,,,,,
-SEAL-no embeddings,2,Increased body temp.,,,,,
-SEAL-no embeddings,3,Increased body temp.,,,,,
-SEAL-no embeddings,4,Increased body temp.,,,,,
-SEAL-no embeddings,5,Increased body temp.,,,,,
-SEAL-no embeddings,6,Increased body temp.,,,,,
-SEAL-no embeddings,7,Increased body temp.,,,,,
-SEAL-no embeddings,8,Increased body temp.,,,,,
-SEAL-no embeddings,9,Increased body temp.,,,,,
-SEAL-no embeddings,10,Increased body temp.,,,,,
-SEAL-no embeddings,1,Bleeding,,,,,
-SEAL-no embeddings,2,Bleeding,,,,,
-SEAL-no embeddings,3,Bleeding,,,,,
-SEAL-no embeddings,4,Bleeding,,,,,
-SEAL-no embeddings,5,Bleeding,,,,,
-SEAL-no embeddings,6,Bleeding,,,,,
-SEAL-no embeddings,7,Bleeding,,,,,
-SEAL-no embeddings,8,Bleeding,,,,,
-SEAL-no embeddings,9,Bleeding,,,,,
-SEAL-no embeddings,10,Bleeding,,,,,
-P-GNN,1,Mumps,,,,,
-P-GNN,2,Mumps,,,,,
-P-GNN,3,Mumps,,,,,
-P-GNN,4,Mumps,,,,,
-P-GNN,5,Mumps,,,,,
-P-GNN,6,Mumps,,,,,
-P-GNN,7,Mumps,,,,,
-P-GNN,8,Mumps,,,,,
-P-GNN,9,Mumps,,,,,
-P-GNN,10,Mumps,,,,,
-P-GNN,1,Carbuncle,,,,,
-P-GNN,2,Carbuncle,,,,,
-P-GNN,3,Carbuncle,,,,,
-P-GNN,4,Carbuncle,,,,,
-P-GNN,5,Carbuncle,,,,,
-P-GNN,6,Carbuncle,,,,,
-P-GNN,7,Carbuncle,,,,,
-P-GNN,8,Carbuncle,,,,,
-P-GNN,9,Carbuncle,,,,,
-P-GNN,10,Carbuncle,,,,,
-P-GNN,1,Coccydynia,,,,,
-P-GNN,2,Coccydynia,,,,,
-P-GNN,3,Coccydynia,,,,,
-P-GNN,4,Coccydynia,,,,,
-P-GNN,5,Coccydynia,,,,,
-P-GNN,6,Coccydynia,,,,,
-P-GNN,7,Coccydynia,,,,,
-P-GNN,8,Coccydynia,,,,,
-P-GNN,9,Coccydynia,,,,,
-P-GNN,10,Coccydynia,,,,,
-P-GNN,1,Emesis,,,,,
-P-GNN,2,Emesis,,,,,
-P-GNN,3,Emesis,,,,,
-P-GNN,4,Emesis,,,,,
-P-GNN,5,Emesis,,,,,
-P-GNN,6,Emesis,,,,,
-P-GNN,7,Emesis,,,,,
-P-GNN,8,Emesis,,,,,
-P-GNN,9,Emesis,,,,,
-P-GNN,10,Emesis,,,,,
-P-GNN,1,Increased body temp.,,,,,
-P-GNN,2,Increased body temp.,,,,,
-P-GNN,3,Increased body temp.,,,,,
-P-GNN,4,Increased body temp.,,,,,
-P-GNN,5,Increased body temp.,,,,,
-P-GNN,6,Increased body temp.,,,,,
-P-GNN,7,Increased body temp.,,,,,
-P-GNN,8,Increased body temp.,,,,,
-P-GNN,9,Increased body temp.,,,,,
-P-GNN,10,Increased body temp.,,,,,
-P-GNN,1,Bleeding,,,,,
-P-GNN,2,Bleeding,,,,,
-P-GNN,3,Bleeding,,,,,
-P-GNN,4,Bleeding,,,,,
-P-GNN,5,Bleeding,,,,,
-P-GNN,6,Bleeding,,,,,
-P-GNN,7,Bleeding,,,,,
-P-GNN,8,Bleeding,,,,,
-P-GNN,9,Bleeding,,,,,
-P-GNN,10,Bleeding,,,,,
+SEAL-no embeddings,1,Mumps,0.07085,0.97778,0.99452,0.99621,16.997266054153442
+SEAL-no embeddings,2,Mumps,0.07085,0.97778,0.99452,0.99621,16.85235595703125
+SEAL-no embeddings,3,Mumps,0.07085,0.97778,0.99452,0.99621,17.909646034240723
+SEAL-no embeddings,4,Mumps,,0.97778,0.99452,0.99621,18.271742820739746
+SEAL-no embeddings,5,Mumps,,0.97778,0.99452,0.99621,16.985039949417114
+SEAL-no embeddings,6,Mumps,,0.97778,0.99452,0.99621,17.15564227104187
+SEAL-no embeddings,7,Mumps,,0.97778,0.99452,0.99621,16.86199116706848
+SEAL-no embeddings,8,Mumps,,0.97778,0.99452,0.99621,
+SEAL-no embeddings,9,Mumps,,0.97778,0.99452,0.99621,
+SEAL-no embeddings,10,Mumps,,0.97778,0.99452,0.99621,
+SEAL-no embeddings,1,Carbuncle,0.13905,0.94771,0.99250,0.99259,11.732981204986572
+SEAL-no embeddings,2,Carbuncle,0.13905,0.94771,0.99250,0.99259,11.67411208152771
+SEAL-no embeddings,3,Carbuncle,0.13905,0.94771,0.99250,0.99259,12.287667989730835
+SEAL-no embeddings,4,Carbuncle,,0.94771,0.99250,0.99259,12.379404067993164
+SEAL-no embeddings,5,Carbuncle,,0.94771,0.99250,0.99259,
+SEAL-no embeddings,6,Carbuncle,,0.94771,0.99250,0.99259,
+SEAL-no embeddings,7,Carbuncle,,0.94771,0.99250,0.99259,
+SEAL-no embeddings,8,Carbuncle,,0.94771,0.99250,0.99259,
+SEAL-no embeddings,9,Carbuncle,,0.94771,0.99250,0.99259,
+SEAL-no embeddings,10,Carbuncle,,0.94771,0.99250,0.99259,
+SEAL-no embeddings,1,Coccydynia,0.12469,0.94771,0.98953,0.99170,12.335448026657104
+SEAL-no embeddings,2,Coccydynia,0.12469,0.94771,0.98953,0.99170,12.478435039520264
+SEAL-no embeddings,3,Coccydynia,0.12469,0.94771,0.98953,0.99170,12.846211910247803
+SEAL-no embeddings,4,Coccydynia,,0.94771,0.98953,0.99170,
+SEAL-no embeddings,5,Coccydynia,,0.94771,0.98953,0.99170,
+SEAL-no embeddings,6,Coccydynia,,0.94771,0.98953,0.99170,
+SEAL-no embeddings,7,Coccydynia,,0.94771,0.98953,0.99170,
+SEAL-no embeddings,8,Coccydynia,,0.94771,0.98953,0.99170,
+SEAL-no embeddings,9,Coccydynia,,0.94771,0.98953,0.99170,
+SEAL-no embeddings,10,Coccydynia,,0.94771,0.98953,0.99170,
+SEAL-no embeddings,1,Emesis,0.41110,0.81361,0.88709,0.85960,9775.971467018127
+SEAL-no embeddings,2,Emesis,0.41110,0.81361,0.88709,0.85960,8406.428763151169
+SEAL-no embeddings,3,Emesis,,0.81361,0.88709,0.85960,
+SEAL-no embeddings,4,Emesis,,0.81361,0.88709,0.85960,
+SEAL-no embeddings,5,Emesis,,0.81361,0.88709,0.85960,
+SEAL-no embeddings,6,Emesis,,0.81361,0.88709,0.85960,
+SEAL-no embeddings,7,Emesis,,0.81361,0.88709,0.85960,
+SEAL-no embeddings,8,Emesis,,0.81361,0.88709,0.85960,
+SEAL-no embeddings,9,Emesis,,0.81361,0.88709,0.85960,
+SEAL-no embeddings,10,Emesis,,0.81361,0.88709,0.85960,
+SEAL-no embeddings,1,Increased body temp.,0.43310,0.80090,0.87414,0.84382,10137.186612129211
+SEAL-no embeddings,2,Increased body temp.,0.43310,0.80090,0.87414,0.84382,5004.751347064972
+SEAL-no embeddings,3,Increased body temp.,,0.80090,0.87414,0.84382,
+SEAL-no embeddings,4,Increased body temp.,,0.80090,0.87414,0.84382,
+SEAL-no embeddings,5,Increased body temp.,,0.80090,0.87414,0.84382,
+SEAL-no embeddings,6,Increased body temp.,,0.80090,0.87414,0.84382,
+SEAL-no embeddings,7,Increased body temp.,,0.80090,0.87414,0.84382,
+SEAL-no embeddings,8,Increased body temp.,,0.80090,0.87414,0.84382,
+SEAL-no embeddings,9,Increased body temp.,,0.80090,0.87414,0.84382,
+SEAL-no embeddings,10,Increased body temp.,,0.80090,0.87414,0.84382,
+SEAL-no embeddings,1,Bleeding,0.43741,0.80108,0.87341,0.84891,1425.4729487895966
+SEAL-no embeddings,2,Bleeding,0.43741,0.80108,0.87341,0.84891,1412.8971638679504
+SEAL-no embeddings,3,Bleeding,0.43741,0.80108,0.87341,0.84891,1466.9136340618134
+SEAL-no embeddings,4,Bleeding,,0.80108,0.87341,0.84891,
+SEAL-no embeddings,5,Bleeding,,0.80108,0.87341,0.84891,
+SEAL-no embeddings,6,Bleeding,,0.80108,0.87341,0.84891,
+SEAL-no embeddings,7,Bleeding,,0.80108,0.87341,0.84891,
+SEAL-no embeddings,8,Bleeding,,0.80108,0.87341,0.84891,
+SEAL-no embeddings,9,Bleeding,,0.80108,0.87341,0.84891,
+SEAL-no embeddings,10,Bleeding,,0.80108,0.87341,0.84891,
+ComplEx,1,Mumps,,0.7722,0.8985,0.9233,2.8400557041168213
+ComplEx,2,Mumps,,0.8000,0.8899,0.8866,2.893528938293457
+ComplEx,3,Mumps,,0.7611,0.8854,0.9050,2.851499080657959
+ComplEx,4,Mumps,,0.6889,0.8896,0.9160,2.7293829917907715
+ComplEx,5,Mumps,,0.7667,0.8868,0.9069,3.2821502685546875
+ComplEx,6,Mumps,,0.7500,0.8774,0.8965,3.0401768684387207
+ComplEx,7,Mumps,,0.7500,0.9054,0.9170,3.088545799255371
+ComplEx,8,Mumps,,0.7556,0.8957,0.9218,2.6971001625061035
+ComplEx,9,Mumps,,0.7000,0.8777,0.8962,2.5754361152648926
+ComplEx,10,Mumps,,0.7611,0.9030,0.9260,2.794116973876953
+ComplEx,1,Carbuncle,,0.8092,0.8712,0.8919,2.8745946884155273
+ComplEx,2,Carbuncle,,0.7697,0.8660,0.8828,2.428510904312134
+ComplEx,3,Carbuncle,,0.8158,0.8594 ,0.8705,2.4882349967956543
+ComplEx,4,Carbuncle,,0.7632,0.8750,0.9041,3.295870065689087
+ComplEx,5,Carbuncle,,0.8158,0.8747,0.8991,2.70772385597229
+ComplEx,6,Carbuncle,,0.7697,0.8541,0.8679,4.640452861785889
+ComplEx,7,Carbuncle,,0.8026,0.8745,0.9050,2.6126439571380615
+ComplEx,8,Carbuncle,,0.8026,0.8643,0.8940,2.479273796081543
+ComplEx,9,Carbuncle,,0.8224,0.8814,0.9067,2.6004810333251953
+ComplEx,10,Carbuncle,,0.7961,0.8516,0.8821,2.3974647521972656
+ComplEx,1,Coccydynia,,0.7171,0.8149,0.8391,3.3461711406707764
+ComplEx,2,Coccydynia,,0.7237,0.8128,0.8528,2.4221088886260986
+ComplEx,3,Coccydynia,,0.7237,0.8154,0.8027,3.3135499954223633
+ComplEx,4,Coccydynia,,,0.8104,0.8357,3.400254964828491
+ComplEx,5,Coccydynia,,,0.8054,0.8496,3.034714937210083
+ComplEx,6,Coccydynia,,,0.8350,0.8737,2.945805788040161
+ComplEx,7,Coccydynia,,,0.8130,0.8424,2.4906978607177734
+ComplEx,8,Coccydynia,,,0.7905,0.8421,2.724524974822998
+ComplEx,9,Coccydynia,,,0.8139,0.8475,2.6211037635803223
+ComplEx,10,Coccydynia,,,0.8064,0.8459,3.1958179473876953
+ComplEx,1,Emesis,,,0.8081,0.7778,151.11153388023376
+ComplEx,2,Emesis,,,0.8070,0.7772,155.78800296783447
+ComplEx,3,Emesis,,,0.7998,0.7731,138.4037208557129
+ComplEx,4,Emesis,,,0.8049,0.7795,158.42129826545715
+ComplEx,5,Emesis,,,0.8020,0.7658,154.76739311218262
+ComplEx,6,Emesis,,,0.7987,0.7678,152.728266954422
+ComplEx,7,Emesis,,,0.8059,0.7743,169.70477986335754
+ComplEx,8,Emesis,,,0.7970,0.7666,138.40574383735657
+ComplEx,9,Emesis,,,0.8040,0.7664,138.53795909881592
+ComplEx,10,Emesis,,,0.8081,0.7732,140.26845693588257
+ComplEx,1,Increased body temp.,,,0.8080,0.7699,131.8768379688263
+ComplEx,2,Increased body temp.,,,0.8093,0.7718,122.12539029121399
+ComplEx,3,Increased body temp.,,,0.8051,0.7664,115.60404396057129
+ComplEx,4,Increased body temp.,,,0.8049,0.7731,117.20998215675354
+ComplEx,5,Increased body temp.,,,0.8065,0.7729,115.11103200912476
+ComplEx,6,Increased body temp.,,,0.8070,0.7739,123.51292109489441
+ComplEx,7,Increased body temp.,,,0.8040,0.7639,128.2536690235138
+ComplEx,8,Increased body temp.,,,0.8049,0.7669,123.63124299049377
+ComplEx,9,Increased body temp.,,,0.8063,0.7658,120.5378201007843
+ComplEx,10,Increased body temp.,,,0.8098,0.7730,127.55956888198853
+ComplEx,1,Bleeding,,,0.7659,0.7436,99.6408998966217
+ComplEx,2,Bleeding,,,0.7627,0.7413,96.96103286743164
+ComplEx,3,Bleeding,,,0.7703,0.7600,92.5204222202301
+ComplEx,4,Bleeding,,,0.7622,0.7344,99.75482273101807
+ComplEx,5,Bleeding,,,0.7733,0.7488,94.03356695175171
+ComplEx,6,Bleeding,,,0.7725,0.7542,95.21066999435425
+ComplEx,7,Bleeding,,,0.7615,0.7389,98.13973188400269
+ComplEx,8,Bleeding,,,0.7720,0.7529,98.75793266296387
+ComplEx,9,Bleeding,,,0.7664,0.7353,91.15603876113892
+ComplEx,10,Bleeding,,,0.7765,0.7583,97.0487368106842
 Decagon,1,Mumps,,,,0.964,
 Decagon,1,Carbuncle,,,,0.949,
 Decagon,1,Coccydynia,,,,0.943,
 Decagon,1,Emesis,,,,0.693,
 Decagon,1,Increased body temp.,,,,0.680,
 Decagon,1,Bleeding,,,,0.679,
+DistMult,1,Mumps,,,0.9446,0.9517,0.6501681804656982
+DistMult,2,Mumps,,,0.9526,0.9588,0.6337881088256836
+DistMult,3,Mumps,,,0.9433,0.9523,0.7023940086364746
+DistMult,4,Mumps,,,0.9435,0.9460,0.6411750316619873
+DistMult,5,Mumps,,,0.9460,0.9542,0.6685290336608887
+DistMult,6,Mumps,,,0.9510,0.9560,0.5820558071136475
+DistMult,7,Mumps,,,0.9527,0.9608,0.7205569744110107
+DistMult,8,Mumps,,,0.9473,0.9502,0.6945710182189941
+DistMult,9,Mumps,,,0.9373,0.9381,0.8455450534820557
+DistMult,10,Mumps,,,0.9435,0.9469,0.7284579277038574
+DistMult,1,Carbuncle,,,0.9226,0.9406,0.6660778522491455
+DistMult,2,Carbuncle,,,0.9359,0.9435,0.6657359600067139
+DistMult,3,Carbuncle,,,0.9204,0.9276,0.7097010612487793
+DistMult,4,Carbuncle,,,0.9160,0.9250,0.6782400608062744
+DistMult,5,Carbuncle,,,0.9178,0.9279,0.713676929473877
+DistMult,6,Carbuncle,,,0.9107,0.9296,1.2852280139923096
+DistMult,7,Carbuncle,,,0.9339,0.9446,0.9050817489624023
+DistMult,8,Carbuncle,,,0.9159,0.9294,0.8354990482330322
+DistMult,9,Carbuncle,,,0.9323,0.9461,0.8639411926269531
+DistMult,10,Carbuncle,,,0.9204,0.9336,0.7232110500335693
+DistMult,1,Coccydynia,,,0.9138,0.9375,0.714824914932251
+DistMult,2,Coccydynia,,,0.9221,0.9482,0.6705131530761719
+DistMult,3,Coccydynia,,,0.9039,0.9290,0.6952250003814697
+DistMult,4,Coccydynia,,,0.9159,0.9366,0.8097870349884033
+DistMult,5,Coccydynia,,,0.9046,0.9253,0.8187429904937744
+DistMult,6,Coccydynia,,,0.9176,0.9385,1.334517002105713
+DistMult,7,Coccydynia,,,0.9101,0.9341,0.734248161315918
+DistMult,8,Coccydynia,,,0.8835,0.8806,0.7532999515533447
+DistMult,9,Coccydynia,,,0.9075,0.9193,0.7585000991821289
+DistMult,10,Coccydynia,,,0.9108,0.9287,0.7537810802459717
+DistMult,1,Emesis,,,0.9095,0.8828,30.616120100021362
+DistMult,2,Emesis,,,0.9110,0.8883,26.39346480369568
+DistMult,3,Emesis,,,0.9104,0.8892,25.98909091949463
+DistMult,4,Emesis,,,0.9094,0.8850,24.860754013061523
+DistMult,5,Emesis,,,0.9092,0.8840,25.90953302383423
+DistMult,6,Emesis,,,0.9109,0.8910,26.606439113616943
+DistMult,7,Emesis,,,0.9078,0.8836,25.59218692779541
+DistMult,8,Emesis,,,0.9111,0.8887,25.85982394218445
+DistMult,9,Emesis,,,0.9081,0.8854,27.754868030548096
+DistMult,10,Emesis,,,0.9047,0.8775,25.065987825393677
+DistMult,1,Increased body temp.,,,0.8943,0.8670,28.065328121185303
+DistMult,2,Increased body temp.,,,0.9016,0.8764,22.89925193786621
+DistMult,3,Increased body temp.,,,0.8967,0.8712,23.361204862594604
+DistMult,4,Increased body temp.,,,0.8954,0.8710,22.253359079360962
+DistMult,5,Increased body temp.,,,0.8985,0.8683,23.427474975585938
+DistMult,6,Increased body temp.,,,0.8980,0.8729,31.31008291244507
+DistMult,7,Increased body temp.,,,0.9019,0.8767,22.424062252044678
+DistMult,8,Increased body temp.,,,0.8940,0.8675,30.973161935806274
+DistMult,9,Increased body temp.,,,0.8957,0.8638,27.336155891418457
+DistMult,10,Increased body temp.,,,0.8998,0.8752,22.41395902633667
+DistMult,1,Bleeding,,,0.8892,0.8628,13.873759031295776
+DistMult,2,Bleeding,,,0.8950,0.8790,15.165364980697632
+DistMult,3,Bleeding,,,0.8958,0.8797,14.03913927078247
+DistMult,4,Bleeding,,,0.8904,0.8685,13.353954076766968
+DistMult,5,Bleeding,,,0.8916,0.8673,13.408419132232666
+DistMult,6,Bleeding,,,0.8923,0.8677,17.570791244506836
+DistMult,7,Bleeding,,,0.8889,0.8634,14.457998991012573
+DistMult,8,Bleeding,,,0.9014,0.8833,14.15455412864685
+DistMult,9,Bleeding,,,0.8921,0.8746,15.711621761322021
+DistMult,10,Bleeding,,,0.8966,0.8778,14.03978180885315
+TriVec,1,Mumps,,,0.7741,0.7492,2.567824125289917
+TriVec,2,Mumps,,,0.8231,0.8389,2.7906382083892822
+TriVec,3,Mumps,,,0.7952,0.7983,2.91715407371521
+TriVec,4,Mumps,,,0.8232,0.8421,2.5183780193328857
+TriVec,5,Mumps,,,0.8044,0.7752,2.5315909385681152
+TriVec,6,Mumps,,,0.7983,0.7941,2.436908006668091
+TriVec,7,Mumps,,,0.8221,0.8498,2.7752609252929688
+TriVec,8,Mumps,,,0.8209,0.7954,2.6069979667663574
+TriVec,9,Mumps,,,0.8120,0.8122,2.564332962036133
+TriVec,10,Mumps,,,0.8357,0.8008,2.5297579765319824
+TriVec,1,Carbuncle,,,0.8082,0.8276,2.447366952896118
+TriVec,2,Carbuncle,,,0.8167,0.8377,3.8685970306396484
+TriVec,3,Carbuncle,,,0.8066,0.8348,2.4653069972991943
+TriVec,4,Carbuncle,,,0.8426,0.8729,2.4088010787963867
+TriVec,5,Carbuncle,,,0.7768,0.7897,2.3810360431671143
+TriVec,6,Carbuncle,,,0.7883,0.8195,2.3989081382751465
+TriVec,7,Carbuncle,,,0.7938,0.8071,2.4061620235443115
+TriVec,8,Carbuncle,,,0.8056,0.8366,2.460752010345459
+TriVec,9,Carbuncle,,,0.8096,0.8423,2.3095951080322266
+TriVec,10,Carbuncle,,,0.7907,0.8318,2.173572063446045
+TriVec,1,Coccydynia,,,0.8269,0.8315,2.6042470932006836
+TriVec,2,Coccydynia,,,0.7872,0.7805,2.61929988861084
+TriVec,3,Coccydynia,,,0.8194,0.8373,2.3031816482543945
+TriVec,4,Coccydynia,,,0.8321,0.8397,3.3225128650665283
+TriVec,5,Coccydynia,,,0.7668,0.7875,2.2296502590179443
+TriVec,6,Coccydynia,,,0.8167,0.8365,2.7761971950531006
+TriVec,7,Coccydynia,,,0.7917,0.7779,2.4477639198303223
+TriVec,8,Coccydynia,,,0.7711,0.7436,2.470900774002075
+TriVec,9,Coccydynia,,,0.7815,0.7334,2.4600329399108887
+TriVec,10,Coccydynia,,,0.7696,0.7606,2.2664530277252197
+TriVec,1,Emesis,,,0.8719,0.8517,137.51163411140442
+TriVec,2,Emesis,,,0.8742,0.8553,162.68203282356262
+TriVec,3,Emesis,,,0.8651,0.8350,123.77466678619385
+TriVec,4,Emesis,,,0.8707,0.8466,126.7515959739685
+TriVec,5,Emesis,,,0.8708,0.8468,138.70702290534973
+TriVec,6,Emesis,,,0.8709,0.8404,116.14429092407227
+TriVec,7,Emesis,,,0.8678,0.8345,126.8382260799408
+TriVec,8,Emesis,,,0.8711,0.8474,123.72474384307861
+TriVec,9,Emesis,,,0.8742,0.8517,123.12317490577698
+TriVec,10,Emesis,,,0.8739,0.8510,121.30106806755066
+TriVec,1,Increased body temp.,,,0.8573,0.8390,121.45142912864685
+TriVec,2,Increased body temp.,,,0.8617,0.8487,150.927081823349
+TriVec,3,Increased body temp.,,,0.8525,0.8289,119.44363498687744
+TriVec,4,Increased body temp.,,,0.8606,0.8408,121.6581461429596
+TriVec,5,Increased body temp.,,,0.8558,0.8303,111.12885999679565
+TriVec,6,Increased body temp.,,,0.8497,0.8232,117.09167814254761
+TriVec,7,Increased body temp.,,,0.8591,0.8325,117.07739090919495
+TriVec,8,Increased body temp.,,,0.8557,0.8360,116.15512013435364
+TriVec,9,Increased body temp.,,,0.8574,0.8305,123.203204870224
+TriVec,10,Increased body temp.,,,0.8566,0.8393,110.39614605903625
+TriVec,1,Bleeding,,,0.7968,0.7902,82.44177603721619
+TriVec,2,Bleeding,,,0.7953,0.7832,74.18312215805054
+TriVec,3,Bleeding,,,0.7984,0.7853,73.55549907684326
+TriVec,4,Bleeding,,,0.7977,0.7816,76.58494186401367
+TriVec,5,Bleeding,,,0.8020,0.7893,74.40380215644836
+TriVec,6,Bleeding,,,0.8028,0.7909,69.0470860004425
+TriVec,7,Bleeding,,,0.8077,0.7924,78.21547603607178
+TriVec,8,Bleeding,,,0.8067,0.7949,73.84240889549255
+TriVec,9,Bleeding,,,0.8028,0.7925,74.05426406860352
+TriVec,10,Bleeding,,,0.8133,0.8120,74.36068296432495
+TransE,1,Mumps,,,0.9423,0.9391,0.5616040229797363
+TransE,2,Mumps,,,0.9552,0.9641,0.5810823440551758
+TransE,3,Mumps,,,0.9459,0.9480,0.5906848907470703
+TransE,4,Mumps,,,0.9428,0.9392,0.535038948059082
+TransE,5,Mumps,,,0.9464,0.9537,0.5767781734466553
+TransE,6,Mumps,,,0.9546,0.9576,0.5648460388183594
+TransE,7,Mumps,,,0.9341,0.9423,0.5460128784179688
+TransE,8,Mumps,,,0.9449,0.9540,0.5259382724761963
+TransE,9,Mumps,,,0.9310,0.9359,0.6081037521362305
+TransE,10,Mumps,,,0.9577,0.9637,0.5444197654724121
+TransE,1,Carbuncle,,,0.9212,0.9384,0.7290709018707275
+TransE,2,Carbuncle,,,0.9370,0.9506,0.5908408164978027
+TransE,3,Carbuncle,,,0.9479,0.9573,0.6646418571472168
+TransE,4,Carbuncle,,,0.9160,0.9304,0.5988409519195557
+TransE,5,Carbuncle,,,0.9122,0.9265,0.7381620407104492
+TransE,6,Carbuncle,,,0.9282,0.9384,0.6242780685424805
+TransE,7,Carbuncle,,,0.9363,0.9495,0.606550931930542
+TransE,8,Carbuncle,,,0.9070,0.8990,0.5838451385498047
+TransE,9,Carbuncle,,,0.9422,0.9492,0.6466758251190186
+TransE,10,Carbuncle,,,0.9396,0.9498,0.5870349407196045
+TransE,1,Coccydynia,,,0.8998,0.9302,0.8180909156799316
+TransE,2,Coccydynia,,,0.9032,0.9287,0.7302398681640625
+TransE,3,Coccydynia,,,0.8861,0.8864,0.8622078895568848
+TransE,4,Coccydynia,,,0.9256,0.9448,0.6249608993530273
+TransE,5,Coccydynia,,,0.9056,0.9351,0.6887938976287842
+TransE,6,Coccydynia,,,0.8972,0.9193,0.5992131233215332
+TransE,7,Coccydynia,,,0.9036,0.9271,0.628856897354126
+TransE,8,Coccydynia,,,0.8935,0.9140,0.7337126731872559
+TransE,9,Coccydynia,,,0.8918,0.9139,0.8640341758728027
+TransE,10,Coccydynia,,,0.9157,0.9411,0.6133310794830322
+TransE,1,Emesis,,,0.9105,0.8878,11.784693002700806
+TransE,2,Emesis,,,0.9116,0.8923,11.597380876541138
+TransE,3,Emesis,,,0.9069,0.8823,12.752732038497925
+TransE,4,Emesis,,,0.9046,0.8813,11.621156930923462
+TransE,5,Emesis,,,0.9097,0.8897,14.560703992843628
+TransE,6,Emesis,,,0.9078,0.8845,11.767410039901733
+TransE,7,Emesis,,,0.9130,0.8931,11.578249216079712
+TransE,8,Emesis,,,0.9054,0.8811,11.295344114303589
+TransE,9,Emesis,,,0.9085,0.8874,12.03422212600708
+TransE,10,Emesis,,,0.9108,0.8881,12.627518892288208
+TransE,1,Increased body temp.,,,0.8886,0.8583,10.73264479637146
+TransE,2,Increased body temp.,,,0.8953,0.8684,10.433203935623169
+TransE,3,Increased body temp.,,,0.8965,0.8731,11.217062950134277
+TransE,4,Increased body temp.,,,0.8910,0.8613,10.058087348937988
+TransE,5,Increased body temp.,,,0.8935,0.8612,11.677767992019653
+TransE,6,Increased body temp.,,,0.8952,0.8663,10.406955003738403
+TransE,7,Increased body temp.,,,0.8965,0.8714,9.99037218093872
+TransE,8,Increased body temp.,,,0.8932,0.8670,10.812475204467773
+TransE,9,Increased body temp.,,,0.8984,0.8700,11.267019987106323
+TransE,10,Increased body temp.,,,0.8927,0.8626,10.162474870681763
+TransE,1,Bleeding,,,0.8911,0.8684,7.821831941604614
+TransE,2,Bleeding,,,0.8884,0.8623,8.537238836288452
+TransE,3,Bleeding,,,0.8993,0.8818,8.409101963043213
+TransE,4,Bleeding,,,0.8941,0.8692,7.828821897506714
+TransE,5,Bleeding,,,0.8906,0.8656,8.671561002731323
+TransE,6,Bleeding,,,0.8969,0.8815,8.887242078781128
+TransE,7,Bleeding,,,0.8818,0.8574,8.53612470626831
+TransE,8,Bleeding,,,0.8964,0.8756,8.029160976409912
+TransE,9,Bleeding,,,0.8899,0.8651,8.712283849716187
+TransE,10,Bleeding,,,0.8990,0.8766,8.496914863586426

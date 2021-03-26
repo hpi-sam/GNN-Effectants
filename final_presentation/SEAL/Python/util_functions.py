@@ -65,6 +65,11 @@ def sample_neg(net, test_ratio=0.1, train_pos=None, test_pos=None, max_train_num
         train_neg  = (neg[0], neg[1])
         test_neg_i, test_neg_j, _ = ssp.find(ssp.triu(net==0, k=1))
         test_neg = (test_neg_i.tolist(), test_neg_j.tolist())
+
+    print('Positive Train Samples: {}'.format(len(train_pos[1])))
+    print('Negative Train Samples: {}'.format(len(train_neg[1])))
+    print('Positive Test Samples: {}'.format(len(test_pos[1])))
+    print('Negative Test Samples: {}'.format(len(test_neg[1])))
     return train_pos, train_neg, test_pos, test_neg
 
     

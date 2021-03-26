@@ -133,25 +133,6 @@ edge_type_to_new = sp.csr_matrix((range(num_edge_type), ([0] * num_edge_type, ed
 side_effect_to_old = list(mono_set)
 side_effect_to_new = sp.csr_matrix((range(num_drug_additional_feature), ([0] * num_drug_additional_feature, side_effect_to_old)))
 
-
-# side effect name - original index
-# TODO select 3 form each list for comparison
-# best_name = ["Mumps", "Carbuncle", "Coccydynia", "Tympanic membrane perfor", "Dyshidrosis", 
-#              "Spondylosis", "Schizoaffective disorder", "Breast dysplasia", "Ganglion", "Uterine polyp"
-#             ]
-# worst_name = ["Bleeding", "Body temperature increased",  "Emesis", "Renal disorder", "Leucopenia", 
-#               "Diarrhea", "Icterus", "Nausea", "Itch", "Anaemia"]
-# best_org_ind = [26780, 7078, 9193, 206504, 32633, 
-#                 38019, 36337, 16034, 1258666, 156369] 
-# worst_org_ind = [19080, 15967, 42963, 22658, 23530, 
-#                  11991, 22346, 27497, 33774, 2871]
-
-# best_ind = [edge_type_to_new[0, i] for i in best_org_ind]
-# worst_ind = [edge_type_to_new[0, i] for i in worst_org_ind]
-
-
-# print(best_ind, worst_ind)
-
 # drug-drug adjacency matrix list
 # set temporary variable
 # r: key is the index of edge type, value is a list of two lists [drug list, drug list]
@@ -196,6 +177,8 @@ drug_feat_sparse = sp.csr_matrix(([1] * array_length, (r, c)), shape=(num_drug, 
 
 drug_nonzero_feat, drug_num_feat = drug_feat_sparse.shape[1], np.count_nonzero(drug_feat_sparse.sum(axis=0))
 drug_feat = sparse_to_tuple(drug_feat_sparse.tocoo())
+
+exit()
 
 # creating a single graph containing all relevant edge types
 print("Building subgraphs...")
