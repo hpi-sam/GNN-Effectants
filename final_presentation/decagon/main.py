@@ -234,6 +234,17 @@ edge_type_to_new = sp.csr_matrix((range(num_edge_type), ([0] * num_edge_type, ed
 side_effect_to_old = list(mono_set)
 side_effect_to_new = sp.csr_matrix((range(num_drug_additional_feature), ([0] * num_drug_additional_feature, side_effect_to_old)))
 
+
+# original index - new index
+best_org_ind = [26780, 7078, 9193] 
+worst_org_ind = [19080, 15967, 42963]
+
+best_ind = [edge_type_to_new[0, i] for i in best_org_ind]
+worst_ind = [edge_type_to_new[0, i] for i in worst_org_ind]
+
+print("Indexes to look for: ")
+print(best_ind, worst_ind)
+
 # set temporary variable
 r, c, array_length = [], [], len(pp_list)
 
@@ -318,17 +329,17 @@ val_test_size = 0.05
 # drug_degrees_list = [np.array(drug_adj.sum(axis=0)).squeeze() for drug_adj in drug_drug_adj_list]
 
 
-# # data representation
-# adj_mats_orig = {
-#     (0, 0): [gene_adj, gene_adj.transpose(copy=True)],
-#     (0, 1): [gene_drug_adj],
-#     (1, 0): [drug_gene_adj],
-#     (1, 1): drug_drug_adj_list + [x.transpose(copy=True) for x in drug_drug_adj_list],
-# }
-# degrees = {
-#     0: [gene_degrees, gene_degrees],
-#     1: drug_degrees_list + drug_degrees_list,
-# }
+# data representation
+adj_mats_orig = {
+    (0, 0): [gene_adj, gene_adj.transpose(copy=True)],
+    (0, 1): [gene_drug_adj],
+    (1, 0): [drug_gene_adj],
+    (1, 1): drug_drug_adj_list + [x.transpose(copy=True) for x in drug_drug_adj_list],
+}
+degrees = {
+    0: [gene_degrees, gene_degrees],
+    1: drug_degrees_list + drug_degrees_list,
+}
 
 # # featureless (genes)
 # gene_feat = sp.identity(n_genes)
