@@ -1,0 +1,45 @@
+Importing dataset files ... 
+Processing dataset files to generate a knowledge graph ... 
+Initializing the knowledge graph embedding model... 
+Training ... 
+2021-03-18 20:32:29,222 - TransE - DEBUG - Logging model parameters ...
+2021-03-18 20:32:29,222 - TransE - DEBUG - [Parameter] _predict_pipeline_on: False
+2021-03-18 20:32:29,222 - TransE - DEBUG - [Parameter] batch_size          : 5000
+2021-03-18 20:32:29,222 - TransE - DEBUG - [Parameter] em_size             : 100
+2021-03-18 20:32:29,222 - TransE - DEBUG - [Parameter] initialiser         : xavier_uniform
+2021-03-18 20:32:29,223 - TransE - DEBUG - [Parameter] log_interval        : 10
+2021-03-18 20:32:29,223 - TransE - DEBUG - [Parameter] loss                : default
+2021-03-18 20:32:29,223 - TransE - DEBUG - [Parameter] lr                  : 0.01
+2021-03-18 20:32:29,223 - TransE - DEBUG - [Parameter] margin              : 1.0
+2021-03-18 20:32:29,223 - TransE - DEBUG - [Parameter] nb_ents             : 621
+2021-03-18 20:32:29,223 - TransE - DEBUG - [Parameter] nb_epochs           : 100
+2021-03-18 20:32:29,223 - TransE - DEBUG - [Parameter] nb_negs             : 6
+2021-03-18 20:32:29,223 - TransE - DEBUG - [Parameter] nb_rels             : 1
+2021-03-18 20:32:29,223 - TransE - DEBUG - [Parameter] optimiser           : AMSgrad
+2021-03-18 20:32:29,223 - TransE - DEBUG - [Parameter] predict_batch_size  : 40000
+2021-03-18 20:32:29,223 - TransE - DEBUG - [Parameter] reg_wt              : 0.01
+2021-03-18 20:32:29,223 - TransE - DEBUG - [Parameter] seed                : 1234
+2021-03-18 20:32:29,223 - TransE - DEBUG - [Parameter] similarity          : l1
+2021-03-18 20:32:29,223 - TransE - DEBUG - [Parameter] verbose             : 2
+2021-03-18 20:32:29,223 - TransE - DEBUG - Model training started ...
+2021-03-18 20:32:29,223 - TransE - DEBUG - Training model [ 16130 #Instances - 621 #Entities - 1 #Relations ]
+2021-03-18 20:32:29,437 - TransE - DEBUG - Initialising tensorflow session
+2021-03-18 20:32:29,438 - TransE - DEBUG - Executing tensorflow global variable initialiser
+2021-03-18 20:32:29,726 - TransE - DEBUG - [Training] Epoch # 1    - Speed: 61.806 (k. record/sec) - Loss: 0.6163 - Avg(Loss): 0.6163 - Std(Loss): 0.0868
+2021-03-18 20:32:31,426 - TransE - DEBUG - [Training] Epoch # 10   - Speed: 87.964 (k. record/sec) - Loss: 0.2913 - Avg(Loss): 0.3823 - Std(Loss): 0.0965
+2021-03-18 20:32:33,380 - TransE - DEBUG - [Training] Epoch # 20   - Speed: 69.644 (k. record/sec) - Loss: 0.2220 - Avg(Loss): 0.3162 - Std(Loss): 0.0959
+2021-03-18 20:32:35,262 - TransE - DEBUG - [Training] Epoch # 30   - Speed: 82.934 (k. record/sec) - Loss: 0.1922 - Avg(Loss): 0.2791 - Std(Loss): 0.0944
+2021-03-18 20:32:37,260 - TransE - DEBUG - [Training] Epoch # 40   - Speed: 85.037 (k. record/sec) - Loss: 0.1717 - Avg(Loss): 0.2543 - Std(Loss): 0.0924
+2021-03-18 20:32:39,219 - TransE - DEBUG - [Training] Epoch # 50   - Speed: 80.738 (k. record/sec) - Loss: 0.1584 - Avg(Loss): 0.2364 - Std(Loss): 0.0901
+2021-03-18 20:32:41,111 - TransE - DEBUG - [Training] Epoch # 60   - Speed: 93.597 (k. record/sec) - Loss: 0.1502 - Avg(Loss): 0.2225 - Std(Loss): 0.0880
+2021-03-18 20:32:43,037 - TransE - DEBUG - [Training] Epoch # 70   - Speed: 87.348 (k. record/sec) - Loss: 0.1447 - Avg(Loss): 0.2116 - Std(Loss): 0.0857
+2021-03-18 20:32:45,091 - TransE - DEBUG - [Training] Epoch # 80   - Speed: 67.785 (k. record/sec) - Loss: 0.1382 - Avg(Loss): 0.2027 - Std(Loss): 0.0836
+2021-03-18 20:32:47,194 - TransE - DEBUG - [Training] Epoch # 90   - Speed: 83.768 (k. record/sec) - Loss: 0.1337 - Avg(Loss): 0.1952 - Std(Loss): 0.0816
+2021-03-18 20:32:49,192 - TransE - DEBUG - [Training] Epoch # 100  - Speed: 83.562 (k. record/sec) - Loss: 0.1296 - Avg(Loss): 0.1889 - Std(Loss): 0.0797
+2021-03-18 20:32:49,192 - TransE - DEBUG - [Reporting] Finished (100 Epochs) - Avg(Speed): 82.767 (k. record/sec) - Avg(Loss): 0.1889 - Std(Loss): 0.0797
+================================================================================
+AC: 0.6088 - AP: 0.8836 - AUC-ROC: 0.9078 - AUC-PR: 0.8836 - P@50: 0.9600 > emesis (3456)
+================================================================================
+[AVERAGE] AC: 0.6088 - AP: 0.8836 - AUC-ROC: 0.9078 - AUC-PR: 0.8836 - P@50: 0.9600
+================================================================================
+This run has taken 25.59218692779541 seconds to execute.

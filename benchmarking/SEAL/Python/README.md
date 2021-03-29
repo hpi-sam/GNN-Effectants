@@ -21,6 +21,7 @@ Furthermore we adjusted the main.py of pytorch_DGCNN to evalute PR-AUC. The file
 Usage
 ------
 Type
+
     bash ./loop.sh
 
 This will execute all SEAL runs with and without Node2Vec.
