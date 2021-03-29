@@ -14,4 +14,6 @@ This will execute all DistMult runs.
 
 Requirements
 ------------
-
+- install LibKGE by running its
+    sh install.sh 
+- tensorflow=1.13.1 

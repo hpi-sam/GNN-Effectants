@@ -13,4 +13,6 @@ This will execute all TransE runs.
 
 Requirements
 ------------
-
+- install LibKGE by running its
+    sh install.sh 
+- tensorflow=1.13.1 
