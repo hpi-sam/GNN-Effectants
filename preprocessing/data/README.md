@@ -1,0 +1,1 @@
+Decagon data is to large for github and has to be downloaded manually from (http://snap.stanford.edu/decagon/)
