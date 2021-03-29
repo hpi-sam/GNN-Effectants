@@ -224,18 +224,21 @@ ggplot(data_Bleeding, aes(x=Algorithm, y=mean_pr_auc)) +
 
 
 
-test <- read_csv("../pre/data/bio-decagon-combo.csv")
+test <- read_csv("../preprocessing/data/bio-decagon-combo.csv")
 
-length(unique(c(test$`STITCH 2`, test$`STITCH 1`)))
+test2 <- test %>%
+  filter(`Side Effect Name` == "Bleeding")
+
+length(unique(c(test2$`STITCH 2`, test2$`STITCH 1`)))
 
 length(test$`STITCH 1`)
 
-networks <- read_csv("../pre/data/dataframe_top3.csv")
+networks <- read_csv("../preprocessing/data/dataframe_top3.csv")
 
 unique(networks$label)
 
 single <- networks %>%
-  filter(label == "Mumps")
+  filter(label == "Bleeding")
 nrow(single)
 length(unique(c(single$source, single$target)))
 
