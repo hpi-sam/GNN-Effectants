@@ -1,4 +1,3 @@
-import time
 from sklearn.metrics import roc_auc_score
 from sklearn.metrics import average_precision_score
 from tensorboardX import SummaryWriter
@@ -8,7 +7,6 @@ from model import *
 from utils import *
 from dataset import *
 
-start = time.time()
 if not os.path.isdir('results'):
     os.mkdir('results')
 # args
@@ -140,6 +138,9 @@ for task in ['link', 'link_pair']:
                     auc_train = 0
                     auc_val = 0
                     auc_test = 0
+                    pr_train=0
+                    pr_test=0
+                    pr_val=0
                     emb_norm_min = 0
                     emb_norm_max = 0
                     emb_norm_mean = 0
@@ -237,7 +238,3 @@ writer_val.export_scalars_to_json("./all_scalars.json")
 writer_val.close()
 writer_test.export_scalars_to_json("./all_scalars.json")
 writer_test.close()
-
-end = time.time()
-time_taken = end - start
-print('This run has taken {} seconds to execute.'.format(time_taken))
