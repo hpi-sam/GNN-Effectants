@@ -29,7 +29,7 @@ def main():
     start = time.time()
     seed = 1234
     data_name = "pse"
-    kg_dp_path = "../../data/"
+    kg_dp_path = "../../preprocessing/data/"
 
     print("Importing dataset files ... ")
     benchmark_train_fd = gzip.open(os.path.join(kg_dp_path, f"{args.sideeffect}_train.txt.gz"), "rt")
