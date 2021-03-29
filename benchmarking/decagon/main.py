@@ -99,27 +99,15 @@ def construct_placeholders(edge_types):
 
 ###########################################################
 #
-# Load and preprocess data (This is a dummy toy example!)
+# Load and preprocess data 
 #
 ###########################################################
 
-####
-# The following code uses artificially generated and very small networks.
-# Expect less than excellent performance as these random networks do not have any interesting structure.
-# The purpose of main.py is to show how to use the code!
-#
-# All preprocessed datasets used in the drug combination study are at: http://snap.stanford.edu/decagon:
-# (1) Download datasets from http://snap.stanford.edu/decagon to your local machine.
-# (2) Replace dummy toy datasets used here with the actual datasets you just downloaded.
-# (3) Train & test the model.
-####
-
-
 # set data paths
-pp_f = "../pre/data/bio-decagon-ppi.csv"
-dd_f = "../pre/data/bio-decagon-combo.csv"
-dp_f = "../pre/data/bio-decagon-targets.csv"
-ds_f = "../pre/data/bio-decagon-mono.csv"
+pp_f = "../../preprocessing/data/bio-decagon-ppi.csv"
+dd_f = "../../preprocessing/data/bio-decagon-combo.csv"
+dp_f = "../../preprocessing/data/bio-decagon-targets.csv"
+ds_f = "../../preprocessing/data/bio-decagon-mono.csv"
 
 # original data collection holder
 p_set = set()                 # protein nodes
@@ -307,26 +295,7 @@ drug_nonzero_feat, drug_num_feat = drug_feat_sparse.shape[1], np.count_nonzero(d
 drug_feat = preprocessing.sparse_to_tuple(drug_feat_sparse.tocoo())
 
 val_test_size = 0.05
-# n_genes = 500
-# n_drugs = 400
-# n_drugdrug_rel_types = 3
-# gene_net = nx.planted_partition_graph(50, 10, 0.2, 0.05, seed=42)
 
-# gene_adj = nx.adjacency_matrix(gene_net)
-# gene_degrees = np.array(gene_adj.sum(axis=0)).squeeze()
-
-# gene_drug_adj = sp.csr_matrix((10 * np.random.randn(n_genes, n_drugs) > 15).astype(int))
-# drug_gene_adj = gene_drug_adj.transpose(copy=True)
-
-# drug_drug_adj_list = []
-# tmp = np.dot(drug_gene_adj, gene_drug_adj)
-# for i in range(n_drugdrug_rel_types):
-#     mat = np.zeros((n_drugs, n_drugs))
-#     for d1, d2 in combinations(list(range(n_drugs)), 2):
-#         if tmp[d1, d2] == i + 4:
-#             mat[d1, d2] = mat[d2, d1] = 1.
-#     drug_drug_adj_list.append(sp.csr_matrix(mat))
-# drug_degrees_list = [np.array(drug_adj.sum(axis=0)).squeeze() for drug_adj in drug_drug_adj_list]
 
 
 # data representation

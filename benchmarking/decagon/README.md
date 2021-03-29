@@ -1,4 +1,8 @@
-# Decagon: Representation Learning on Multimodal Graphs
+
+# Benchmarking Decagon
+We adjusted the main.py form the github repository to work with the real dataset!
+
+## Decagon: Representation Learning on Multimodal Graphs
 
 #### Author: [Marinka Zitnik](http://stanford.edu/~marinka) (marinka@cs.stanford.edu)
 
