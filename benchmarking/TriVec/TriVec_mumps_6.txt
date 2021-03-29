@@ -1,0 +1,43 @@
+Importing dataset files ... 
+Processing dataset files to generate a knowledge graph ... 
+Initializing the knowledge graph embedding model... 
+Training ... 
+2021-03-18 21:26:51,405 - TriModel - DEBUG - Logging model parameters ...
+2021-03-18 21:26:51,406 - TriModel - DEBUG - [Parameter] _predict_pipeline_on: False
+2021-03-18 21:26:51,406 - TriModel - DEBUG - [Parameter] batch_size          : 5000
+2021-03-18 21:26:51,406 - TriModel - DEBUG - [Parameter] em_size             : 100
+2021-03-18 21:26:51,406 - TriModel - DEBUG - [Parameter] initialiser         : xavier_uniform
+2021-03-18 21:26:51,406 - TriModel - DEBUG - [Parameter] log_interval        : 10
+2021-03-18 21:26:51,406 - TriModel - DEBUG - [Parameter] loss                : default
+2021-03-18 21:26:51,406 - TriModel - DEBUG - [Parameter] lr                  : 0.01
+2021-03-18 21:26:51,406 - TriModel - DEBUG - [Parameter] nb_ents             : 79
+2021-03-18 21:26:51,406 - TriModel - DEBUG - [Parameter] nb_epochs           : 100
+2021-03-18 21:26:51,406 - TriModel - DEBUG - [Parameter] nb_negs             : 6
+2021-03-18 21:26:51,406 - TriModel - DEBUG - [Parameter] nb_rels             : 1
+2021-03-18 21:26:51,406 - TriModel - DEBUG - [Parameter] optimiser           : AMSgrad
+2021-03-18 21:26:51,406 - TriModel - DEBUG - [Parameter] predict_batch_size  : 40000
+2021-03-18 21:26:51,406 - TriModel - DEBUG - [Parameter] reg_wt              : 0.01
+2021-03-18 21:26:51,406 - TriModel - DEBUG - [Parameter] seed                : 1234
+2021-03-18 21:26:51,406 - TriModel - DEBUG - [Parameter] verbose             : 2
+2021-03-18 21:26:51,406 - TriModel - DEBUG - Model training started ...
+2021-03-18 21:26:51,406 - TriModel - DEBUG - Training model [ 420 #Instances - 79 #Entities - 1 #Relations ]
+2021-03-18 21:26:51,595 - TriModel - DEBUG - Initialising tensorflow session
+2021-03-18 21:26:51,596 - TriModel - DEBUG - Executing tensorflow global variable initialiser
+2021-03-18 21:26:51,753 - TriModel - DEBUG - [Training] Epoch # 1    - Speed: 3.206 (k. record/sec) - Loss: 0.6932 - Avg(Loss): 0.6932 - Std(Loss): 0.0000
+2021-03-18 21:26:51,975 - TriModel - DEBUG - [Training] Epoch # 10   - Speed: 19.624 (k. record/sec) - Loss: 0.6584 - Avg(Loss): 0.6806 - Std(Loss): 0.0110
+2021-03-18 21:26:52,197 - TriModel - DEBUG - [Training] Epoch # 20   - Speed: 15.861 (k. record/sec) - Loss: 0.5183 - Avg(Loss): 0.6352 - Std(Loss): 0.0549
+2021-03-18 21:26:52,404 - TriModel - DEBUG - [Training] Epoch # 30   - Speed: 23.384 (k. record/sec) - Loss: 0.4503 - Avg(Loss): 0.5823 - Std(Loss): 0.0878
+2021-03-18 21:26:52,598 - TriModel - DEBUG - [Training] Epoch # 40   - Speed: 24.356 (k. record/sec) - Loss: 0.3387 - Avg(Loss): 0.5339 - Std(Loss): 0.1143
+2021-03-18 21:26:52,783 - TriModel - DEBUG - [Training] Epoch # 50   - Speed: 13.764 (k. record/sec) - Loss: 0.2614 - Avg(Loss): 0.4858 - Std(Loss): 0.1409
+2021-03-18 21:26:52,980 - TriModel - DEBUG - [Training] Epoch # 60   - Speed: 20.401 (k. record/sec) - Loss: 0.2285 - Avg(Loss): 0.4456 - Std(Loss): 0.1569
+2021-03-18 21:26:53,175 - TriModel - DEBUG - [Training] Epoch # 70   - Speed: 24.586 (k. record/sec) - Loss: 0.2301 - Avg(Loss): 0.4153 - Std(Loss): 0.1632
+2021-03-18 21:26:53,368 - TriModel - DEBUG - [Training] Epoch # 80   - Speed: 23.252 (k. record/sec) - Loss: 0.2171 - Avg(Loss): 0.3918 - Std(Loss): 0.1648
+2021-03-18 21:26:53,551 - TriModel - DEBUG - [Training] Epoch # 90   - Speed: 23.766 (k. record/sec) - Loss: 0.2250 - Avg(Loss): 0.3737 - Std(Loss): 0.1636
+2021-03-18 21:26:53,732 - TriModel - DEBUG - [Training] Epoch # 100  - Speed: 23.566 (k. record/sec) - Loss: 0.2168 - Avg(Loss): 0.3589 - Std(Loss): 0.1614
+2021-03-18 21:26:53,733 - TriModel - DEBUG - [Reporting] Finished (100 Epochs) - Avg(Speed): 21.563 (k. record/sec) - Avg(Loss): 0.3589 - Std(Loss): 0.1614
+================================================================================
+AC: 0.6667 - AP: 0.7941 - AUC-ROC: 0.7983 - AUC-PR: 0.7941 - P@50: 0.8600 > Mumps (90  )
+================================================================================
+[AVERAGE] AC: 0.6667 - AP: 0.7941 - AUC-ROC: 0.7983 - AUC-PR: 0.7941 - P@50: 0.8600
+================================================================================
+This run has taken 2.436908006668091 seconds to execute.

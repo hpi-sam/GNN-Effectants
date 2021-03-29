@@ -1,0 +1,43 @@
+Importing dataset files ... 
+Processing dataset files to generate a knowledge graph ... 
+Initializing the knowledge graph embedding model... 
+Training ... 
+2021-03-18 18:00:47,799 - ComplEx - DEBUG - Logging model parameters ...
+2021-03-18 18:00:47,800 - ComplEx - DEBUG - [Parameter] _predict_pipeline_on: False
+2021-03-18 18:00:47,800 - ComplEx - DEBUG - [Parameter] batch_size          : 5000
+2021-03-18 18:00:47,800 - ComplEx - DEBUG - [Parameter] em_size             : 100
+2021-03-18 18:00:47,800 - ComplEx - DEBUG - [Parameter] initialiser         : xavier_uniform
+2021-03-18 18:00:47,800 - ComplEx - DEBUG - [Parameter] log_interval        : 10
+2021-03-18 18:00:47,800 - ComplEx - DEBUG - [Parameter] loss                : default
+2021-03-18 18:00:47,800 - ComplEx - DEBUG - [Parameter] lr                  : 0.01
+2021-03-18 18:00:47,800 - ComplEx - DEBUG - [Parameter] nb_ents             : 86
+2021-03-18 18:00:47,800 - ComplEx - DEBUG - [Parameter] nb_epochs           : 100
+2021-03-18 18:00:47,800 - ComplEx - DEBUG - [Parameter] nb_negs             : 6
+2021-03-18 18:00:47,800 - ComplEx - DEBUG - [Parameter] nb_rels             : 1
+2021-03-18 18:00:47,800 - ComplEx - DEBUG - [Parameter] optimiser           : AMSgrad
+2021-03-18 18:00:47,801 - ComplEx - DEBUG - [Parameter] predict_batch_size  : 40000
+2021-03-18 18:00:47,801 - ComplEx - DEBUG - [Parameter] reg_wt              : 0.01
+2021-03-18 18:00:47,801 - ComplEx - DEBUG - [Parameter] seed                : 1234
+2021-03-18 18:00:47,801 - ComplEx - DEBUG - [Parameter] verbose             : 2
+2021-03-18 18:00:47,801 - ComplEx - DEBUG - Model training started ...
+2021-03-18 18:00:47,801 - ComplEx - DEBUG - Training model [ 356 #Instances - 86 #Entities - 1 #Relations ]
+2021-03-18 18:00:48,465 - ComplEx - DEBUG - Initialising tensorflow session
+2021-03-18 18:00:48,466 - ComplEx - DEBUG - Executing tensorflow global variable initialiser
+2021-03-18 18:00:48,805 - ComplEx - DEBUG - [Training] Epoch # 1    - Speed: 1.239 (k. record/sec) - Loss: 0.6933 - Avg(Loss): 0.6933 - Std(Loss): 0.0000
+2021-03-18 18:00:49,184 - ComplEx - DEBUG - [Training] Epoch # 10   - Speed: 9.086 (k. record/sec) - Loss: 0.6435 - Avg(Loss): 0.6748 - Std(Loss): 0.0158
+2021-03-18 18:00:49,686 - ComplEx - DEBUG - [Training] Epoch # 20   - Speed: 4.437 (k. record/sec) - Loss: 0.4872 - Avg(Loss): 0.6173 - Std(Loss): 0.0677
+2021-03-18 18:00:50,096 - ComplEx - DEBUG - [Training] Epoch # 30   - Speed: 7.079 (k. record/sec) - Loss: 0.3886 - Avg(Loss): 0.5592 - Std(Loss): 0.1003
+2021-03-18 18:00:50,414 - ComplEx - DEBUG - [Training] Epoch # 40   - Speed: 15.310 (k. record/sec) - Loss: 0.2955 - Avg(Loss): 0.5044 - Std(Loss): 0.1297
+2021-03-18 18:00:50,784 - ComplEx - DEBUG - [Training] Epoch # 50   - Speed: 6.980 (k. record/sec) - Loss: 0.2403 - Avg(Loss): 0.4566 - Std(Loss): 0.1504
+2021-03-18 18:00:51,093 - ComplEx - DEBUG - [Training] Epoch # 60   - Speed: 18.705 (k. record/sec) - Loss: 0.2355 - Avg(Loss): 0.4201 - Std(Loss): 0.1598
+2021-03-18 18:00:51,319 - ComplEx - DEBUG - [Training] Epoch # 70   - Speed: 11.575 (k. record/sec) - Loss: 0.2418 - Avg(Loss): 0.3942 - Std(Loss): 0.1610
+2021-03-18 18:00:51,525 - ComplEx - DEBUG - [Training] Epoch # 80   - Speed: 14.301 (k. record/sec) - Loss: 0.2406 - Avg(Loss): 0.3746 - Std(Loss): 0.1593
+2021-03-18 18:00:51,838 - ComplEx - DEBUG - [Training] Epoch # 90   - Speed: 10.859 (k. record/sec) - Loss: 0.2259 - Avg(Loss): 0.3594 - Std(Loss): 0.1563
+2021-03-18 18:00:52,195 - ComplEx - DEBUG - [Training] Epoch # 100  - Speed: 18.747 (k. record/sec) - Loss: 0.2438 - Avg(Loss): 0.3472 - Std(Loss): 0.1528
+2021-03-18 18:00:52,195 - ComplEx - DEBUG - [Reporting] Finished (100 Epochs) - Avg(Speed): 12.025 (k. record/sec) - Avg(Loss): 0.3472 - Std(Loss): 0.1528
+================================================================================
+AC: 0.7697 - AP: 0.8679 - AUC-ROC: 0.8541 - AUC-PR: 0.8679 - P@50: 0.9000 > carbuncle (76  )
+================================================================================
+[AVERAGE] AC: 0.7697 - AP: 0.8679 - AUC-ROC: 0.8541 - AUC-PR: 0.8679 - P@50: 0.9000
+================================================================================
+This run has taken 4.640452861785889 seconds to execute.
