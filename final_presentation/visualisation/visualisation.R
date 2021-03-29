@@ -1,6 +1,7 @@
 library(tidyverse)
 library(ggplot2)
 library(gtsummary)
+library(scales)
 
 setwd("projects/HPI/GNN-Effectants/final_presentation/visualisation/")
 data <- read_csv("GNN_Statistics.csv")
@@ -31,12 +32,45 @@ summarised_data <- data %>%
             max_pr_time = max(`time in s`, na.rm=T)
   )
 
+summarised_data <- summarised_data %>% 
+  mutate(Algorithm = factor(Algorithm, levels = c("ComplEx", "DistMult", "SEAL", "SEAL (Node2Vec)", "TransE", "TriVec", 'Decagon')),
+         `Side-Effect` = factor(`Side-Effect`, levels = c("Mumps", "Carbuncle", "Coccydynia", "Bleeding", "Increased body temp.
+", "Emesis")))
+
 ggplot(summarised_data, aes(fill=Algorithm, x=`Side-Effect`, y=mean_pr_auc)) + 
   geom_bar(position="dodge", stat = "identity") +
   scale_y_continuous(name="PR-AUC", breaks=seq(0, 1, 0.05), limits = c(0, 1), expand = c(0,0)) + 
   theme_bw() + 
-  scale_fill_brewer(palette="Paired")
+  scale_fill_brewer(palette="Paired") +
+  theme(axis.text=element_text(size=20),
+        axis.title=element_text(size=22,face="bold"),
+        legend.text = element_text(size = 20),
+        legend.title = element_text(size=22,face="bold"),
+        legend.position="top")
 
+ggplot(summarised_data %>% filter(Algorithm != "Decagon"), aes(fill=Algorithm, x=`Side-Effect`, y=mean_roc_auc)) + 
+  geom_bar(position="dodge", stat = "identity") +
+  scale_y_continuous(name="AUROC", breaks=seq(0, 1, 0.05), limits = c(0, 1), expand = c(0,0)) + 
+  theme_bw() + 
+  scale_fill_brewer(palette="Paired") +
+  theme(axis.text=element_text(size=20),
+        axis.title=element_text(size=22,face="bold"),
+        legend.text = element_text(size = 20),
+        legend.title = element_text(size=22,face="bold"),
+        legend.position="top")
+
+ggplot(summarised_data %>% filter(Algorithm != "Decagon"), aes(fill=Algorithm, x=`Side-Effect`, y=mean_time)) + 
+  geom_bar(position="dodge", stat = "identity") +
+  scale_y_continuous(name="Time (s)", breaks = c(0, 1, 100, 250, 500, 1000, 2500, 5000, 7500, 10000), expand = c(0,0), limits = c(0, 10000), trans = 'pseudo_log') + 
+  theme_bw() + 
+  scale_fill_brewer(palette="Paired") +
+  theme(axis.text=element_text(size=20),
+        axis.title=element_text(size=22,face="bold"),
+        legend.text = element_text(size = 20),
+        legend.title = element_text(size=22,face="bold"),
+        legend.position="top")
+
+sum(data$`time in s`, na.rm = T)
 
 t <- summarised_data %>%
   ungroup() %>%
