@@ -1,10 +1,10 @@
 #!/bin/bash
 echo "Starting training loops for SEAL with embedding..."
-for VARIABLE in "emesis"
+for INDEX in 1 2 3 4 5 6 7 8 9 10
 do
-     for INDEX in 1 2 3 4 5 6 7 8 9 10
+    for VARIABLE in "Mumps" "carbuncle" "coccydynia" "Bleeding" "body temperature increased" "emesis"
     do
-	    python Main.py --train-name "${VARIABLE}_train.txt" --test-name "${VARIABLE}_test.txt" --no-parallel --use-embedding > "SEAL_embedding_${VARIABLE}_${INDEX}.txt"
+	    python Main.py --train-name "${VARIABLE}_train.txt" --test-name "${VARIABLE}_test.txt" --no-parallel --use-embedding > "SEAL_N2V_RESULTS/SEAL_embedding_${VARIABLE}_${INDEX}.txt"
     done
 done
 
@@ -13,6 +13,6 @@ for INDEX in 1 2 3 4 5 6 7 8 9 10
 do
     for VARIABLE in "Mumps" "carbuncle" "coccydynia" "Bleeding" "body temperature increased" "emesis"
     do
-	    python Main.py --train-name "${VARIABLE}_train.txt" --test-name "${VARIABLE}_test.txt" --no-parallel > "SEAL_${VARIABLE}_${INDEX}.txt"
+	    python Main.py --train-name "${VARIABLE}_train.txt" --test-name "${VARIABLE}_test.txt" --no-parallel > "SEAL_RESULTS/SEAL_${VARIABLE}_${INDEX}.txt"
     done
 done
